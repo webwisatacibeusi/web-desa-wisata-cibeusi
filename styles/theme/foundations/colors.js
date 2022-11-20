@@ -149,6 +149,7 @@ const colors = {
 	},
 
 	colorone: {
+		main: '#31503E',
 		50: '#81b296',
 		100: '#629f7b',
 		200: '#588f6f',
@@ -161,6 +162,7 @@ const colors = {
 		900: '#000000',
 	},
 	colortwo: {
+		main: '#8AB4B0',
 		50: '#f7faf9',
 		100: '#d8e6e4',
 		200: '#c8dcda',
@@ -173,6 +175,7 @@ const colors = {
 		900: '#406561',
 	},
 	colorthree: {
+		main: '#849EA7',
 		50: '#ecf0f1',
 		100: '#ced9dc',
 		200: '#bfcdd2',
@@ -185,6 +188,7 @@ const colors = {
 		900: '#3d4f55',
 	},
 	colorfour: {
+		main: '#738D8E',
 		50: '#d6ddde',
 		100: '#bac6c7',
 		200: '#abbbbc',
@@ -197,6 +201,7 @@ const colors = {
 		900: '#2e393a',
 	},
 	colorfive: {
+		main: '#F6F6F6',
 		50: '#ffffff',
 		100: '#ffffff',
 		200: '#ffffff',

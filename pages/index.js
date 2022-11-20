@@ -1,12 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
 import {Heading} from "@chakra-ui/react";
+import Navbar from "../components/landing/Navbar";
+import HeroSection from "../components/landing/HeroSection";
+import HeroAbout from "../components/landing/HeroAbout";
+import Wisata from "../components/landing/Wisata";
+import Article from "../components/landing/Article";
+import Footer from "../components/landing/Footer";
 
 export default function Home() {
   return (
     <>
-      <Heading>chakra is here</Heading>
+        <Navbar/>
+        <HeroSection/>
+        <HeroAbout/>
+        <Wisata/>
+        <Article/>
+        <Footer/>
     </>
   )
 }
