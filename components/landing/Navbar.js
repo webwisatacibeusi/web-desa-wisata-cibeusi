@@ -284,7 +284,7 @@ const NAV_ITEMS = [
     },
     {
         label: "Artikel",
-        href: "#",
+        href: "/article",
     },
     {
         label: "Tentang",
