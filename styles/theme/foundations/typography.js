@@ -36,7 +36,7 @@ const typography = {
         black: '900',
     },
     fonts: {
-        heading: 'Inter,Work Sans, system-ui, sans-serif',
+        heading: 'Inter, Work Sans, system-ui, sans-serif',
         body: 'Inter, system-ui, sans-serif',
         mono: 'SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace',
     },

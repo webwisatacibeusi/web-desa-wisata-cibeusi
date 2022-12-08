@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import logo from '../../public/logo/logo48x48.png';
 import Link from "next/link";
-import {BiPhone} from "react-icons/all";
+import {BiPhone} from "react-icons/bi";
 export default function Footer() {
     return (
         <footer className="md:px-24 px-4 bg-[#F9FAFB] py-10 divide-y grid grid-cols-1 md:grid-cols-1 justify-between gap-3">

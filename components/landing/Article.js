@@ -1,5 +1,5 @@
 import {Badge, Container, Heading, HStack, Text, VStack, Box} from "@chakra-ui/react";
-import {FaArrowRight} from "react-icons/all";
+import {FaArrowRight} from "react-icons/fa";
 import Image from "next/image";
 import BlogImage from "../../public/landing/blog.png";
 import Link from "next/link";
@@ -39,7 +39,11 @@ export default function Article(){
         <>
             <Container maxW={"1268px"}>
                 <VStack paddingY={"10"} spacing={"10"}>
-                    <Heading fontWeight={"extrabold"} size={"3xl"}>Baca Articel <span className="text-colortwo-500">Terbaru</span> Kami </Heading>
+                    <Heading fontWeight={"extrabold"} size={{
+                        base: "2xl",
+                        md: "3xl",
+                        lg: "4xl",
+                    }}>Baca Articel <span className="text-colortwo-500">Terbaru</span> Kami </Heading>
                     <Text maxW={"700px"} align={"center"} color={"gray.500"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam vel justo semper luctus tempus sit amet mauris. Morbi orci ligula, fermentum nec diam pharetra, lobortis vestibulum lorem.</Text>
                     <Badge colorScheme={"green"} variant={"subtle"} size={"xl"} borderRadius={"full"}><Badge variant={"subtle"} borderRadius={"full"} colorScheme={"gray"}>Artikel Baru</Badge> Lihat Artikel Terbaru   </Badge>
                     <div className="grid overflow-hidden sm:grid-cols-2 grid-cols-1 sm:grid-rows-2 grid-rows-1 gap-2 ">

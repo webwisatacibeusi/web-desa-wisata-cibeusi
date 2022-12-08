@@ -7,7 +7,6 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -22,6 +21,7 @@ import logo48 from "../../public/logo/logo48x48.png";
 import { BiMenu, BiMenuAltRight } from "react-icons/bi";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -62,16 +62,6 @@ export default function WithSubnavigation() {
                         flex={{ base: 1 }}
                         justify={{ base: "center", md: "start" }}
                     >
-                        {/* <Text
-                            textAlign={useBreakpointValue({
-                                base: "center",
-                                md: "left",
-                            })}
-                            fontFamily={"heading"}
-                            color={useColorModeValue("gray.800", "white")}
-                        >
-                            Logo
-                        </Text> */}
                         <Image src={logo48} alt="logo" />
 
                         <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -120,7 +110,7 @@ export default function WithSubnavigation() {
 
 const DesktopNav = () => {
     const linkColor = useColorModeValue("gray.600", "gray.200");
-    const linkHoverColor = useColorModeValue("myorange.main", "white");
+    const linkHoverColor = useColorModeValue("colorone.main", "white");
     const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
     return (
@@ -131,23 +121,16 @@ const DesktopNav = () => {
                     // bgColor={"mygray.main"}
                     textColor={"colorone.main"}
                     borderRadius={"md"}
-                    _hover={{ bgColor: "colorfive.main" }}
                 >
                     <Popover trigger={"hover"} placement={"bottom-start"}>
                         <PopoverTrigger>
                             <Flex alignItems={"center"} justifyItems={"center"}>
                                 <Link
-                                    p={2}
                                     href={navItem.href ?? "#"}
-                                    fontSize={"sm"}
-                                    fontWeight={500}
-                                    color={linkColor}
-                                    _hover={{
-                                        textDecoration: "none",
-                                        color: linkHoverColor,
-                                    }}
                                 >
-                                    {navItem.label}
+                                    <Button colorScheme={"colorone"} variant={"ghost"}>
+                                        {navItem.label}
+                                    </Button>
                                 </Link>
                             </Flex>
                         </PopoverTrigger>
@@ -186,7 +169,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             display={"block"}
             p={2}
             rounded={"md"}
-            _hover={{ bg: useColorModeValue("colorone.50", "gray.900") }}
+            // _hover={{ bg: useColorModeValue("colorone.50", "gray.900") }}
         >
             <Stack direction={"row"} align={"center"} justifyContent={"center"}>
                 <Box>
@@ -286,6 +269,27 @@ const MobileNavItem = ({ label, children, href }) => {
 };
 
 const NAV_ITEMS = [
+    {
+        label: "Beranda",
+        href: "/",
+        isActive: true,
+    },
+    {
+        label: "Wisata",
+        href: "/wisata",
+    },
+    {
+        label: "Gallery",
+        href: "#",
+    },
+    {
+        label: "Artikel",
+        href: "#",
+    },
+    {
+        label: "Tentang",
+        href: "#",
+    },
     // {
     //     label: "Inspiration",
     //     children: [
@@ -316,25 +320,4 @@ const NAV_ITEMS = [
     //         },
     //     ],
     // },
-    {
-        label: "Beranda",
-        href: "#",
-        isActive: true,
-    },
-    {
-        label: "Wisata",
-        href: "#",
-    },
-    {
-        label: "Gallery",
-        href: "#",
-    },
-    {
-        label: "Artikel",
-        href: "#",
-    },
-    {
-        label: "Tentang",
-        href: "#",
-    },
 ];
