@@ -288,8 +288,9 @@ const NAV_ITEMS = [
     },
     {
         label: "Tentang",
-        href: "#",
+        href: "/about",
     },
+    // DONT DELETE THIS COMMENT
     // {
     //     label: "Inspiration",
     //     children: [

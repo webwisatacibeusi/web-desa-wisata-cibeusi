@@ -43,11 +43,11 @@ export default function CurugPandawa() {
                         winged two let seas blessed a man multiply second waters beast his fruitful likeness and to
                         earth hath make one there him wherein which image. Called living female of.
                     </Text>
-                    <Box w={"full"} h={"auto"} py={"10"}>
+                    <Box w={"full"} h={"auto"} py={"10"} pos={"relative"} pb={"56.25%"}>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5884434944446!2d107.7234755182639!3d-6.939689841946797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1670474615600!5m2!1sen!2sid"
-                            width={1286} height={450} style={{border: 0}} allowFullScreen loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"/>
+                            height={450} style={{border: 0}} allowFullScreen loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade" className={"absolute top-0 left-0 w-full h-full"} />
                     </Box>
 
                 </VStack>
