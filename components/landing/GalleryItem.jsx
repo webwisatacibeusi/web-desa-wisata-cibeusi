@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function GalleryItem(props){
     return (
-        <div className="relative overflow-hidden rounded-2xl group">
+        <div className="relative overflow-hidden rounded-tl-2xl rounded-br-2xl group">
             <div className="absolute z-10 flex space-x-4 top-4 left-4">
             </div>
             <Image

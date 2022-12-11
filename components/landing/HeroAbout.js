@@ -27,13 +27,13 @@ export default function HeroAbout() {
                     justifyContent={"center"}
                     // borderRadius={"lg"}
                 >
-                    <Box borderTopLeftRadius={'3xl'}  borderBottomRightRadius={'3xl'} bgColor={"red.300"} borderWidth={"1px"} overflow={"hidden"}>
+                    <Box borderTopLeftRadius={'3xl'}  borderBottomRightRadius={'3xl'} overflow={"hidden"}>
                         <Image
                             src={imageAbout}
                             alt="desa cibeusi"
                             width={"auto"}
                             height={"auto"}
-
+                            className={"object-cover transition-all duration-300 hover:scale-110"}
                         />
                     </Box>
                 </Box>

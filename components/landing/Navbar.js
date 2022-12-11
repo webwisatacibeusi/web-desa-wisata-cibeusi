@@ -75,7 +75,7 @@ export default function WithSubnavigation() {
                         direction={"row"}
                         spacing={6}
                     >
-                        <ColorModeSwitcher />
+                        {/*<ColorModeSwitcher />*/}
 
                         {/*<Button*/}
                         {/*    as={"a"}*/}
@@ -119,7 +119,7 @@ const DesktopNav = () => {
                 <Box
                     key={navItem.label}
                     // bgColor={"mygray.main"}
-                    textColor={"colorone.main"}
+                    // textColor={"colorone.main"}
                     borderRadius={"md"}
                 >
                     <Popover trigger={"hover"} placement={"bottom-start"}>
@@ -128,7 +128,7 @@ const DesktopNav = () => {
                                 <Link
                                     href={navItem.href ?? "#"}
                                 >
-                                    <Button colorScheme={"colorone"} variant={"ghost"}>
+                                    <Button colorScheme={"gray"} variant={"ghost"}>
                                         {navItem.label}
                                     </Button>
                                 </Link>

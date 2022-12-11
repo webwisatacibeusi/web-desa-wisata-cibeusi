@@ -13,6 +13,7 @@ export default function Wisata() {
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
+            to: '/wisata/curug-pandawa'
         },
         {
             id: 2,
@@ -20,30 +21,35 @@ export default function Wisata() {
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
+            to: '/wisata/curug-pandawa'
         },{
             id: 2,
             title: "Wisata cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
+            to: '/wisata/curug-pandawa'
         },{
             id: 2,
             title: "Wisata cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
+            to: '/wisata/curug-pandawa'
         },{
             id: 2,
             title: "Wisata cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
+            to: '/wisata/curug-pandawa'
         },{
             id: 2,
             title: "Wisata cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
+            to: '/wisata/curug-pandawa'
         },
     ]
     return (
@@ -96,7 +102,7 @@ export default function Wisata() {
                 }}>
                     {WisataData.map((wisata) => (
                     <GridItem key={wisata.id}>
-                        <WisataItem image={wisata.image} rating={wisata.rating} title={wisata.title} location={wisata.location}/>
+                        <WisataItem image={wisata.image} to={wisata.to} rating={wisata.rating} title={wisata.title} location={wisata.location}/>
                     </GridItem>
                     ))}
                 </Grid>

@@ -18,7 +18,7 @@ function MyApp({Component, pageProps}) {
                 <title>Desa Wisata Cibeusi</title>
             </Head>
             <ChakraProvider theme={theme}>
-                <NextNProgress/>
+                <NextNProgress color="#31503E" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true}/>
                 <Component {...pageProps} />
             </ChakraProvider>
         </>
