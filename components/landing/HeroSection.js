@@ -115,7 +115,7 @@ export default function HeroSection() {
         },
         {
             id: 2,
-            title: "Wisata",
+            title: "Index",
             image: urlImageSample,
             to: "/wisata/curug-pandawa",
         },

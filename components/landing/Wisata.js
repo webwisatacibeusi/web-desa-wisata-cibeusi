@@ -25,12 +25,12 @@ export default function Wisata() {
         },
         {
             id: 2,
-            title: "Wisata 2",
+            title: "Index 2",
             image: urlImageSample,
         },
         {
             id: 3,
-            title: "Wisata 3",
+            title: "Index 3",
             image: urlImageSample,
         },
     ]

@@ -1,15 +1,15 @@
-import Navbar from "../components/landing/Navbar";
-import HeroSection from "../components/landing/HeroSection";
-import Footer from "../components/landing/Footer";
+import Navbar from "../../components/landing/Navbar";
+import HeroSection from "../../components/landing/HeroSection";
+import Footer from "../../components/landing/Footer";
 import {Box, Button, Center, Container, Flex, Grid, GridItem, Heading} from "@chakra-ui/react";
-import WisataItem from "../components/landing/WisataItem";
-import WisataFoto from "../public/wisata/wisata-sample.png";
+import WisataItem from "../../components/landing/WisataItem";
+import WisataFoto from "../../public/wisata/wisata-sample.png";
 
-export default function Wisata() {
+export default function Index() {
     const WisataData = [
         {
             id: 1,
-            title: "Wisata cibeusi",
+            title: "Index cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
@@ -17,35 +17,35 @@ export default function Wisata() {
         },
         {
             id: 2,
-            title: "Wisata cibeusi",
+            title: "Index cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
             to: '/wisata/curug-pandawa'
         },{
             id: 2,
-            title: "Wisata cibeusi",
+            title: "Index cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
             to: '/wisata/curug-pandawa'
         },{
             id: 2,
-            title: "Wisata cibeusi",
+            title: "Index cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
             to: '/wisata/curug-pandawa'
         },{
             id: 2,
-            title: "Wisata cibeusi",
+            title: "Index cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,
             to: '/wisata/curug-pandawa'
         },{
             id: 2,
-            title: "Wisata cibeusi",
+            title: "Index cibeusi",
             location: "subang, subang",
             image: WisataFoto,
             rating: 4.5,

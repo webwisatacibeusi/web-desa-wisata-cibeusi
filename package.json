@@ -14,13 +14,16 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/inter": "^4.5.14",
+    "@tailwindcss/typography": "^0.5.8",
     "framer-motion": "^6.5.1",
     "next": "13.0.1",
     "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
+    "react-markdown": "^8.0.4",
     "react-slick": "^0.29.0",
+    "remark-gfm": "^3.0.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

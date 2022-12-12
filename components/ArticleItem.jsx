@@ -10,7 +10,7 @@ const ArticleItem = ({children, img, title, author, publish, seeDetail, tags}) =
 
                 <div className="flex flex-col w-[350px] md:w-[384px] h-full space-y-4">
                     <div className=" overflow-hidden w-[350px] md:w-auto rounded-tl-2xl rounded-br-2xl">
-                        <Image
+                        <img
                             src={img}
                             alt="post image"
                             className="object-cover transition-all duration-300 hover:scale-110"

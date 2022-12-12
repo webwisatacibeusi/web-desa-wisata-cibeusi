@@ -1,11 +1,12 @@
-import Navbar from "../components/landing/Navbar";
-import Footer from "../components/landing/Footer";
+import Navbar from "../../components/landing/Navbar";
+import Footer from "../../components/landing/Footer";
 import {Container, Link} from "@chakra-ui/react";
-import ArticleItem from "../components/ArticleItem";
-import imgWisata from '../public/wisata/wisata-sample.png'
+import ArticleItem from "../../components/ArticleItem";
+import imgWisata from '../../public/wisata/wisata-sample.png'
 import Image from 'next/image'
 
 export default function Article() {
+    const imageSample = 'https://res.cloudinary.com/dz86avoad/image/upload/v1670647811/DSC_00864_19e4b46684.jpg';
     const tags = [
         {
             id: 1,
@@ -22,7 +23,7 @@ export default function Article() {
     const articles = [
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -32,7 +33,7 @@ export default function Article() {
         },
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -42,7 +43,7 @@ export default function Article() {
         },
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -52,7 +53,7 @@ export default function Article() {
         },
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -62,7 +63,7 @@ export default function Article() {
         },
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -72,7 +73,7 @@ export default function Article() {
         },
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -82,7 +83,7 @@ export default function Article() {
         },
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -95,7 +96,7 @@ export default function Article() {
 
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -105,7 +106,7 @@ export default function Article() {
         },
         {
             id: 2,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -115,7 +116,7 @@ export default function Article() {
         },
         {
             id: 3,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -133,14 +134,14 @@ export default function Article() {
                 md: "10",
             }} maxW={"container.xl"} display={"flex"} flexDir={"column"} columnGap={"10"} rowGap={"10"}>
                 <h1 className="text-2xl font-bold">Postingan terkini</h1>
-                <div className="grid overflow-hidden md:grid-cols-2 grid-cols-1 md:grid-rows-2 grid-rows-1">
+                <div className="grid overflow-hidden md:grid-cols-2 grid-cols-1 md:grid-rows-2 grid-rows-1 gap-y-4">
                     {threeLattestPost.map((post, index) => {
                         if (index === 0) {
                             return (
                                 <div className="md:row-span-2" key={post.id}>
                                     <div className="flex flex-col gap-y-5 justify-items-stretch">
                                         <div className="rounded-tl-2xl rounded-br-2xl md:w-[592px] overflow-hidden">
-                                            <Image
+                                            <img
                                                 src={post.img}
                                                 alt="tumbnail post"
                                                 className="transition-all duration-300 hover:scale-110 object-cover w-full"
@@ -174,10 +175,10 @@ export default function Article() {
                                 <div className="md:col-start-2">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                         <div className="rounded-tl-2xl rounded-br-2xl overflow-hidden relative">
-                                            <Image
+                                            <img
                                                 src={post.img}
                                                 alt="tumbnail post"
-                                                className="object-cover transition-all duration-300 hover:scale-110 object-cover w-full"
+                                                className="object-cover transition-all duration-300 hover:scale-110 object-cover w-full h-full"
                                             />
                                         </div>
                                         <div className="flex flex-col gap-y-5">

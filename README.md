@@ -1,4 +1,4 @@
-# Web Wisata Desa Cibeusi
+# Web Index Desa Cibeusi
 ## Getting Started
 
 First, run the development server:

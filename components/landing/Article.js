@@ -3,10 +3,10 @@ import {FaArrowRight} from "react-icons/fa";
 import Image from "next/image";
 import BlogImage from "../../public/landing/blog.png";
 import Link from "next/link";
-import imgWisata from "../../public/wisata/wisata-sample.png";
 
 
-export default function Article(){
+export default function Article() {
+    const imageSample = 'https://res.cloudinary.com/dz86avoad/image/upload/v1670647811/DSC_00864_19e4b46684.jpg';
     const tags = [
         {
             id: 1,
@@ -24,7 +24,7 @@ export default function Article(){
 
         {
             id: 1,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -34,7 +34,7 @@ export default function Article(){
         },
         {
             id: 2,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -44,7 +44,7 @@ export default function Article(){
         },
         {
             id: 3,
-            img: imgWisata,
+            img: imageSample,
             title: "title 1",
             author: "author 1",
             publish: "20 Januari 2022",
@@ -80,17 +80,21 @@ export default function Article(){
                         md: "3xl",
                         lg: "4xl",
                     }}>Baca Articel <span className="text-colortwo-500">Terbaru</span> Kami </Heading>
-                    <Text maxW={"700px"} align={"center"} color={"gray.500"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a quam vel justo semper luctus tempus sit amet mauris. Morbi orci ligula, fermentum nec diam pharetra, lobortis vestibulum lorem.</Text>
-                    <Badge colorScheme={"green"} variant={"subtle"} size={"xl"} borderRadius={"full"}><Badge variant={"subtle"} borderRadius={"full"} colorScheme={"gray"}>Artikel Baru</Badge> Lihat Artikel Terbaru   </Badge>
+                    <Text maxW={"700px"} align={"center"} color={"gray.500"}>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed a quam vel justo semper luctus tempus sit amet mauris. Morbi orci ligula,
+                        fermentum nec diam pharetra, lobortis vestibulum lorem.</Text>
+                    <Badge colorScheme={"green"} variant={"subtle"} size={"xl"} borderRadius={"full"}><Badge
+                        variant={"subtle"} borderRadius={"full"} colorScheme={"gray"}>Artikel Baru</Badge> Lihat Artikel
+                        Terbaru </Badge>
                     <h1 className="text-2xl font-bold">Postingan terkini</h1>
-                    <div className="grid overflow-hidden md:grid-cols-2 grid-cols-1 md:grid-rows-2 grid-rows-1">
+                    <div className="grid overflow-hidden md:grid-cols-2 grid-cols-1 grid-rows-1">
                         {threeLattestPost.map((post, index) => {
                             if (index === 0) {
                                 return (
                                     <div className="md:row-span-2" key={post.id}>
                                         <div className="flex flex-col gap-y-5 justify-items-stretch">
                                             <div className="rounded-tl-2xl rounded-br-2xl md:w-[592px] overflow-hidden">
-                                                <Image
+                                                <img
                                                     src={post.img}
                                                     alt="tumbnail post"
                                                     className="transition-all duration-300 hover:scale-110 object-cover w-full"
@@ -124,7 +128,7 @@ export default function Article(){
                                     <div className="md:col-start-2">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                             <div className="rounded-tl-2xl rounded-br-2xl overflow-hidden relative">
-                                                <Image
+                                                <img
                                                     src={post.img}
                                                     alt="tumbnail post"
                                                     className="object-cover transition-all duration-300 hover:scale-110 object-cover w-full"
