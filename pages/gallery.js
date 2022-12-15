@@ -35,7 +35,9 @@ export default function Gallery() {
                     <AsimetriImage/>
                     <div className="gap-4 space-y-4 sm:columns-2 md:columns-3">
                         {images.map(image => (
-                            <GalleryItem key={image.src} img={image.src}/>
+                            <GalleryItem
+                                key={image.src}
+                                img={image.src}/>
                         ))}
                     </div>
                 </VStack>
