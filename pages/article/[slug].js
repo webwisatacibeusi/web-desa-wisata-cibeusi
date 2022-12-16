@@ -52,15 +52,17 @@ export default function CurugPandawa({article}) {
             <Navbar/>
             <Container maxW={'container.xl'}>
                 <VStack rowGap={'12'} my={10}>
-                    {article.Artikel.Tags.map(tag => (
-                        <Text
-                            fontWeight={'semibold'}
-                            textAlign={'center'}
-                            key={tag.id}
-                            color={'gray.700'}>
-                            {tag.Nama}
-                        </Text>
-                    ))}
+                    <HStack>
+                        {article.Artikel.Tags.map((tag,index) => (
+                            <Text
+                                fontWeight={'semibold'}
+                                textAlign={'center'}
+                                key={tag.id}
+                                color={'gray.700'}>
+                                {index == 0 ? "" : "| "}{tag.Nama}
+                            </Text>
+                        ))}
+                    </HStack>
                     <Heading textAlign={'center'} fontWeight={'extrabold'}>
                         {article.Judul}
                     </Heading>
