@@ -26,7 +26,6 @@ export const getStaticProps = async () => {
   };
 };
 export default function Index({ wisata }) {
-  console.log(wisata);
   return (
     <>
       <Navbar />
@@ -80,7 +79,7 @@ export default function Index({ wisata }) {
                 to={`wisata/${wisata.Detail_Wisata.Slug}`}
                 // rating={wisata.rating}
                 title={wisata.Detail_Wisata.Nama}
-                // location={wisata.Detail_Lokasi}
+                location={wisata.Detail_Lokasi}
               />
             </GridItem>
           ))}
