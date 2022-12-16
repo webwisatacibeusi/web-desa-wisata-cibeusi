@@ -106,82 +106,82 @@ export const Article = ({ data }) => {
             {data.map((post, index) => {
               if (index === 0) {
                 return (
-                  <div className='md:row-span-2' key={post.id}>
-                    <div className='flex flex-col gap-y-5 justify-items-stretch'>
-                      <div className='rounded-tl-2xl rounded-br-2xl md:w-[592px] overflow-hidden'>
-                        <img
-                          src={post.Thumbnail.url}
-                          alt='tumbnail post'
-                          className='transition-all duration-300 hover:scale-110 object-cover w-full'
-                        />
-                      </div>
-                      <h3 className='text-thePrimary font-semibold text-md'>
-                        {new Date(post.publishedAt).toLocaleDateString(
-                          'id-ID',
-                          {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric',
-                          }
-                        )}
-                      </h3>
-                      <Link href={`/article/${post.Slug}`}>
-                        <h1 className='text-xl font-semibold hover:underline'>
-                          {post.Judul}
-                        </h1>
-                      </Link>
-                      <p className='text-gray-400'>
-                        {post.Detail_Artikel.Konten} ...
-                      </p>
-                      <div className='flex flex-wrap justify-start items-start space-x-3'>
-                        {post.Tags.map(tag => (
-                          <div
-                            className='rounded-full px-3 bg-gray-50 text-gray-500 font-semibold self-start'
-                            key={tag.id}>
-                            {tag.Nama}
+                      <div className='md:row-span-2' key={post.id}>
+                        <div className='flex flex-col gap-y-5 justify-items-stretch'>
+                          <div className='rounded-tl-2xl rounded-br-2xl md:w-[592px] overflow-hidden'>
+                            <img
+                                src={post.Thumbnail.url}
+                                alt='tumbnail post'
+                                className='transition-all duration-300 hover:scale-110 object-cover w-full'
+                            />
                           </div>
-                        ))}
+                          <h3 className='text-thePrimary font-semibold text-md'>
+                            {new Date(post.publishedAt).toLocaleDateString(
+                                'id-ID',
+                                {
+                                  year: 'numeric',
+                                  month: 'long',
+                                  day: 'numeric',
+                                }
+                            )}
+                          </h3>
+                          <Link href={`/article/${post.Detail_Artikel.Slug}`}>
+                            <h1 className='text-xl font-semibold hover:underline'>
+                              {post.Detail_Artikel.Judul}
+                            </h1>
+                          </Link>
+                          <p className='text-gray-400'>
+                            {post.Detail_Artikel.Konten} ...
+                          </p>
+                          <div className='flex flex-wrap justify-start items-start space-x-3'>
+                            {post.Tags.map(tag => (
+                                <div
+                                    className='rounded-full px-3 bg-gray-50 text-gray-500 font-semibold self-start'
+                                    key={tag.id}>
+                                  {tag.Nama}
+                                </div>
+                            ))}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                );
+                )
               } else {
                 return (
                   <div className='md:col-start-2' key={post.id}>
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
                       <div className='rounded-tl-2xl rounded-br-2xl overflow-hidden relative'>
                         <img
-                          src={post.Thumbnail.url}
-                          alt='tumbnail post'
-                          className='transition-all duration-300 hover:scale-110 object-cover w-full'
+                            src={post.Thumbnail.url}
+                            alt='tumbnail post'
+                            className='transition-all duration-300 hover:scale-110 object-cover w-full'
                         />
                       </div>
                       <div className='flex flex-col gap-y-5'>
                         <h3 className='text-thePrimary font-semibold text-md'>
                           {new Date(post.publishedAt).toLocaleDateString(
-                            'id-ID',
-                            {
-                              year: 'numeric',
-                              month: 'long',
-                              day: 'numeric',
-                            }
+                              'id-ID',
+                              {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                              }
                           )}
                         </h3>
-                        <Link href='#'>
+                        <Link href={`article/${post.Detail_Artikel.Slug}`}>
                           <h1 className='text-xl font-semibold hover:underline'>
-                            {post.Judul}
+                            {post.Detail_Artikel.Judul}
                           </h1>
                         </Link>
                         <p className='text-gray-400'>
-                          {post.Detail_Artikel.Konten} ...
+                          {post.Deskripsi} ...
                         </p>
                         <div className='flex flex-wrap justify-start items-start space-x-3'>
                           {post.Tags.map(tag => (
-                            <div
-                              className='rounded-full px-3 bg-gray-50 text-gray-500 font-semibold self-start'
-                              key={tag.id}>
-                              {tag.Nama}
-                            </div>
+                              <div
+                                  className='rounded-full px-3 bg-gray-50 text-gray-500 font-semibold self-start'
+                                  key={tag.id}>
+                                {tag.Nama}
+                              </div>
                           ))}
                         </div>
                       </div>
