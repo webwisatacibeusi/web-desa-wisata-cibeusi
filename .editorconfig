@@ -1,0 +1,10 @@
+# create ediitor config for js
+root = true
+
+[*.{js,jsx,ts,tsx}]
+charset = utf-8
+
+# 4 space indentation
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 4

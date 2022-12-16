@@ -15,19 +15,19 @@ export default function Footer() {
                 <p>&copy;2022 Desa Cibeusi Subang</p>
                 <ul className="flex gap-x-6">
                     <li>
-                        <Link href={"#"}>Beranda</Link>
+                        <Link href={"/"}>Beranda</Link>
                     </li>
                     <li>
-                        <Link href={"#"}>Wisata</Link>
+                        <Link href={"/wisata"}>Wisata</Link>
                     </li>
                     {/* <li>Services</li> */}
                     <li>
-                        <Link href={"#"}>
+                        <Link href={"/gallery"}>
                             Gallery
                         </Link>
                     </li>
                     <li>
-                        <Link href={"#"}>
+                        <Link href={"/article"}>
                             Artikel
                         </Link>
                     </li>
