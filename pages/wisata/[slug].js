@@ -14,7 +14,7 @@ export const getStaticPaths = async () => {
   );
   const data = await res.json();
   const paths = data.data.map(post => ({
-    params: { slug: `wisata/${post.Slug}` },
+    params: { slug: `${post.Detail_Wisata.Slug}` },
   }));
   return {
     paths: paths,

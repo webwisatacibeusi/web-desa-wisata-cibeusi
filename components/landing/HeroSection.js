@@ -105,19 +105,19 @@ export default function HeroSection() {
             id: 1,
             title: "All Hail hydra",
             image: urlImageSample,
-            to: "/wisata/curug-pandawa",
+            to: "wisata",
         },
         {
             id: 2,
             title: "Keep It Simple, Stupid",
             image: urlImageSample,
-            to: "/wisata/curug-pandawa",
+            to: "wisata",
         },
         {
             id: 2,
             title: "Index",
             image: urlImageSample,
-            to: "/wisata/curug-pandawa",
+            to: "wisata",
         },
 
     ]
