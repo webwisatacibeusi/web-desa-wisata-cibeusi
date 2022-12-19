@@ -36,7 +36,7 @@ export default function Gallery(data) {
                         {images.map(image => (
                             <GalleryItem
                                 key={image.id}
-                                img={image.formats.url}/>
+                                img={image.formats.medium.url}/>
                         ))}
                     </div>
                 </VStack>
