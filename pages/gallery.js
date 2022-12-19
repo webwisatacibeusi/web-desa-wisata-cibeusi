@@ -25,6 +25,7 @@ export const getStaticProps = async () => {
 export default function Gallery(data) {
     let images = data.gallery.List_Gambar;
 
+    console.log(images);
     return (
         <>
             <Navbar/>
@@ -35,7 +36,7 @@ export default function Gallery(data) {
                         {images.map(image => (
                             <GalleryItem
                                 key={image.id}
-                                img={image.formats.medium.url}/>
+                                img={image.formats.url}/>
                         ))}
                     </div>
                 </VStack>
